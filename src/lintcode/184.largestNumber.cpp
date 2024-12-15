@@ -23,7 +23,7 @@ public:
         string res;
         for (auto n : nums)
             res += to_string(n);
-        return res.empty() && res[0] == '0' ? "0" : res;
+        return res.empty() || res[0] == '0' ? "0" : res;
     }
 };
 
